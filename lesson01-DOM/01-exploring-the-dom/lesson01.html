@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 01</title>
+</head>
+<body>
+
+    <script>
+
+        /* Abaixo, temos o título da página. */
+        console.log(document.title)
+
+        /* Abaixo, temos o corpo do HTML */
+        console.log(document.body)
+
+        /* Abaixo, temos os elementos que são filhos imediatos do <body>: */
+        console.log(document.body.children)
+
+        /* Estamos obtendo o elemento que possui o ID "teste". */
+        console.log(document.getElementById("teste"))
+
+        /* Podemos obter um elemento da página através de um seletor CSS, por exemplo: */
+        /* No exemplo abaixo, estamos obtendo o elemento com o ID "#board". */
+        console.log(document.querySelector("#board"))
+
+        /* Podemos usar o seletor de CSS para obter todos os elementos "h1". */
+        console.log(document.querySelectorAll("h1")) //NodeList
+
+        /* Podemos também retornar uma coleção com todos elementos que possuem uma tag na página, por
+        * exemplo: */
+        document.getElementsByTagName("h1") //HTMLCollection
+
+        /* Podemos pegar todos os elementos que possuem uma determinada classe, por exemplo: */
+        document.getElementsByClassName("player")
+
+        /* Diferença entre NodeList e HTMLCollection */
+        /* Há algumas diferenças que serão abordadas posteriormente no curso, mas, em geral, eles
+        * são equivalentes. */
+
+        /* Podemos contar a quantidade de elementos retornados por uma query no "document" com a
+        * propriedade "length", por exemplo: */
+        document.getElementsByClassName("teste").length
+
+        /* Podemos obter o texto dentro de um determinado elemento, por exemplo: */
+        document.getElementById("p1-name").textContent
+    </script>
+
+</body>
+</html>
